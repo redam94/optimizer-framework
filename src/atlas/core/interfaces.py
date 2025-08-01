@@ -1,7 +1,7 @@
 """Core interfaces and abstract base classes."""
 
 from abc import ABC, abstractmethod
-from typing import Any, Dict, Optional, Protocol, Union
+from typing import Any, Dict, Optional, Protocol
 
 import xarray as xr
 from pydantic import BaseModel

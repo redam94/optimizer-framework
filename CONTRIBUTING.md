@@ -1,6 +1,6 @@
-# Contributing to Optimize Framework
+# Contributing to Atlas
 
-We welcome contributions to the Optimize Framework! This document provides guidelines for contributing to the project.
+We welcome contributions to Atlas! This document provides guidelines for contributing to the project.
 
 ## Getting Started
 

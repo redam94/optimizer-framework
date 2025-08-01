@@ -195,8 +195,8 @@ def setup(app):
         
         def run(self):
             title = self.arguments[0]
-            channels = self.options.get('channels', 'tv, digital, radio')
-            objective = self.options.get('objective', 'revenue')
+            self.options.get('channels', 'tv, digital, radio')
+            self.options.get('objective', 'revenue')
             
             para = nodes.paragraph()
             para += nodes.strong(text=f"Optimization Example: {title}")

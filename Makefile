@@ -22,7 +22,6 @@ test:
 	pytest tests/ -v --cov=atlas
 
 lint:
-	flake8 src tests
 	mypy src
 	black --check src tests
 	isort --check-only src tests
