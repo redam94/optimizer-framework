@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "optimizer-framework"
+  site-url: "https://redam94.github.io/optimizer-framework"
+  description: "A unified framework for optimizing marketing and operational budget allocations across diverse models and scenarios. It provides a standardized interface for integrating any predictive model (ML, statistical, third-party APIs) while supporting multi-KPI optimization with complex constraints."
+  repo-branch: main
+  repo-url: "https://github.com/redam94/optimizer-framework"
