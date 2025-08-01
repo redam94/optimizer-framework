@@ -23,7 +23,7 @@ Before optimizing, profile your code to identify bottlenecks:
 ```python
 import cProfile
 import pstats
-from optimizer_framework import OptimizationService
+from atlas import OptimizationService
 
 # Profile optimization run
 profiler = cProfile.Profile()
@@ -50,7 +50,7 @@ For detailed line-by-line profiling:
 # Install: pip install line_profiler
 
 from line_profiler import LineProfiler
-import optimizer_framework.models
+import atlas.models
 
 lp = LineProfiler()
 lp.add_function(model.predict)
@@ -113,7 +113,7 @@ class FastModel(AbstractModel):
 
 ```python
 # Use surrogate models for expensive computations
-from optimizer_framework.models import SurrogateModel
+from atlas.models import SurrogateModel
 
 class EfficientSurrogate(SurrogateModel):
     def __init__(self, complex_model, n_samples=1000):
@@ -689,7 +689,7 @@ ENV MKL_NUM_THREADS=4
 ENV NUMEXPR_NUM_THREADS=4
 
 # Run with optimizations
-CMD ["python", "-O", "-m", "optimizer_framework.server"]
+CMD ["python", "-O", "-m", "atlas.server"]
 ```
 
 ### Kubernetes Scaling

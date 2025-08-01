@@ -23,7 +23,7 @@ Best for models implemented in Python or easily callable from Python.
 #### Step 1: Implement the AbstractModel Interface
 
 ```python
-from optimizer_framework.models import AbstractModel
+from atlas.models import AbstractModel
 import xarray as xr
 from typing import Dict, List, Optional
 
@@ -151,7 +151,7 @@ class MyRevenueModel(AbstractModel):
 
 ```python
 # model_config.py
-from optimizer_framework.config import ModelConfiguration, LeverSpecification
+from atlas.config import ModelConfiguration, LeverSpecification
 
 class RevenueModelConfig(ModelConfiguration):
     """Configuration for revenue prediction model."""
@@ -224,7 +224,7 @@ class RevenueModelConfig(ModelConfiguration):
 ```python
 # test_model_integration.py
 import pytest
-from optimizer_framework import ModelRegistry
+from atlas import ModelRegistry
 from mymodels import MyRevenueModel, RevenueModelConfig
 
 def test_model_integration():
@@ -360,7 +360,7 @@ CMD ["uvicorn", "model_service.app:app", "--host", "0.0.0.0", "--port", "8000"]
 
 ```python
 # docker_wrapper.py
-from optimizer_framework.models import DockerModelWrapper
+from atlas.models import DockerModelWrapper
 import requests
 import xarray as xr
 
@@ -401,7 +401,7 @@ Best for cloud services, vendor APIs, or remote models.
 
 ```python
 # api_wrapper.py
-from optimizer_framework.models import AbstractModel
+from atlas.models import AbstractModel
 import requests
 from typing import Dict
 import xarray as xr
@@ -712,7 +712,7 @@ class VersionedModel(AbstractModel):
 
 ```python
 # Register model with framework
-from optimizer_framework import ModelRegistry
+from atlas import ModelRegistry
 
 registry = ModelRegistry()
 

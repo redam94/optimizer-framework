@@ -36,7 +36,7 @@ The framework's model-agnostic architecture enables seamless integration with an
 
 ```python
 # Method 1: Direct Python Integration
-from optimizer_framework import ModelWrapper
+from atlas import ModelWrapper
 
 class MyCustomModel(ModelWrapper):
     def predict(self, budget):
@@ -292,7 +292,7 @@ GET /api/v1/results/{job_id}
 #### **Python SDK**
 
 ```python
-from optimizer_framework import Client
+from atlas import Client
 
 client = Client(api_key="your-api-key")
 result = client.optimize(
@@ -350,7 +350,7 @@ Scale optimization across multiple machines for large problems.
 
 ```python
 # Distributed optimization with Ray
-from optimizer_framework.distributed import DistributedOptimizer
+from atlas.distributed import DistributedOptimizer
 
 optimizer = DistributedOptimizer(
     n_workers=10,

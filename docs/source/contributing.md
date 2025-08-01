@@ -118,7 +118,7 @@ mypy src
 pytest
 
 # Check coverage
-pytest --cov=optimizer_framework --cov-report=html
+pytest --cov=atlas --cov-report=html
 ```
 
 ## Making Contributions
@@ -227,7 +227,7 @@ import numpy as np
 import pandas as pd
 
 # Local imports
-from optimizer_framework.core import BaseClass
+from atlas.core import BaseClass
 
 
 class MyClass:
@@ -358,7 +358,7 @@ tests/
 ```python
 import pytest
 import numpy as np
-from optimizer_framework import Model, OptimizationError
+from atlas import Model, OptimizationError
 
 
 class TestModel:
@@ -423,7 +423,7 @@ Aim for at least 80% code coverage:
 
 ```bash
 # Run tests with coverage
-pytest --cov=optimizer_framework --cov-report=html
+pytest --cov=atlas --cov-report=html
 
 # View coverage report
 open htmlcov/index.html

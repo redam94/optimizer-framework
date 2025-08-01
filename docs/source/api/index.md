@@ -31,7 +31,7 @@ This reference covers the main classes and methods in Atlas. For complete API do
 Base class for all models in the framework.
 
 ```python
-from optimizer_framework.models import AbstractModel
+from atlas.models import AbstractModel
 ```
 
 #### Class Definition
@@ -113,7 +113,7 @@ for var in contributions.data_vars:
 Convenience wrapper for integrating existing models.
 
 ```python
-from optimizer_framework.models import ModelWrapper
+from atlas.models import ModelWrapper
 ```
 
 #### Class Definition
@@ -169,7 +169,7 @@ wrapped_model = ModelWrapper(
 Wrapper for models deployed as Docker containers.
 
 ```python
-from optimizer_framework.models import DockerModelWrapper
+from atlas.models import DockerModelWrapper
 ```
 
 #### Class Definition
@@ -239,7 +239,7 @@ predictions = docker_model.predict(budget_data)
 Abstract base class for optimization algorithms.
 
 ```python
-from optimizer_framework.optimizers import BaseOptimizer
+from atlas.optimizers import BaseOptimizer
 ```
 
 #### Class Definition
@@ -274,7 +274,7 @@ class BaseOptimizer(ABC):
 Optimizer using SciPy optimization algorithms.
 
 ```python
-from optimizer_framework.optimizers import ScipyOptimizer
+from atlas.optimizers import ScipyOptimizer
 ```
 
 #### Class Definition
@@ -346,7 +346,7 @@ print(f"Expected outcome: {result.optimal_value}")
 Optimizer using Optuna for black-box optimization.
 
 ```python
-from optimizer_framework.optimizers import OptunaOptimizer
+from atlas.optimizers import OptunaOptimizer
 ```
 
 #### Class Definition
@@ -419,7 +419,7 @@ fig.show()
 Base class for optimization strategies.
 
 ```python
-from optimizer_framework.strategies import BaseOptimizationStrategy
+from atlas.strategies import BaseOptimizationStrategy
 ```
 
 #### Class Definition
@@ -444,7 +444,7 @@ class BaseOptimizationStrategy(ABC):
 Strategy for optimizing multiple objectives.
 
 ```python
-from optimizer_framework.strategies import MultiObjectiveStrategy
+from atlas.strategies import MultiObjectiveStrategy
 ```
 
 #### Class Definition
@@ -512,7 +512,7 @@ result = optimizer.optimize(initial_budget, constraints)
 Manages configuration loading and validation.
 
 ```python
-from optimizer_framework.config import ConfigurationManager
+from atlas.config import ConfigurationManager
 ```
 
 #### Class Definition
@@ -562,7 +562,7 @@ final_config = ConfigurationManager.merge(config, env_config)
 Configuration class for models.
 
 ```python
-from optimizer_framework.config import ModelConfiguration
+from atlas.config import ModelConfiguration
 ```
 
 #### Class Definition
@@ -590,7 +590,7 @@ class ModelConfiguration:
 Container for optimization results.
 
 ```python
-from optimizer_framework.core import OptimizationResult
+from atlas.core import OptimizationResult
 ```
 
 #### Class Definition
@@ -666,7 +666,7 @@ print(comparison)
 Factory for creating optimizers.
 
 ```python
-from optimizer_framework import OptimizerFactory
+from atlas import OptimizerFactory
 
 # Create optimizer by type
 optimizer = OptimizerFactory.create(
@@ -688,7 +688,7 @@ print(f"Available optimizers: {available}")
 Factory for creating models.
 
 ```python
-from optimizer_framework import ModelFactory
+from atlas import ModelFactory
 
 # Create model by type
 model = ModelFactory.create(
@@ -708,7 +708,7 @@ ModelFactory.register('custom_type', MyCustomModel)
 Convert between different budget representations.
 
 ```python
-from optimizer_framework.utils import BudgetConverter
+from atlas.utils import BudgetConverter
 
 # Convert dictionary to xarray
 budget_dict = {'tv': 100000, 'digital': 200000}
@@ -726,7 +726,7 @@ budget_df = BudgetConverter.xarray_to_dataframe(budget_xr)
 Validate constraint specifications.
 
 ```python
-from optimizer_framework.utils import ConstraintValidator
+from atlas.utils import ConstraintValidator
 
 # Validate constraints
 constraints = {
@@ -748,7 +748,7 @@ if not is_valid:
 Create standard visualizations.
 
 ```python
-from optimizer_framework.viz import OptimizationVisualizer
+from atlas.viz import OptimizationVisualizer
 
 viz = OptimizationVisualizer()
 
@@ -773,7 +773,7 @@ dashboard.show()
 ### Custom Exceptions
 
 ```python
-from optimizer_framework.exceptions import (
+from atlas.exceptions import (
     OptimizationError,
     ModelError,
     ConstraintViolationError,
@@ -856,14 +856,14 @@ config = ConfigurationManager.merge(base_config, env_config)
 To check the installed version and dependencies:
 
 ```python
-import optimizer_framework
+import atlas
 
 # Version
-print(f"Version: {optimizer_framework.__version__}")
+print(f"Version: {atlas.__version__}")
 
 # Available features
-print(f"Features: {optimizer_framework.list_features()}")
+print(f"Features: {atlas.list_features()}")
 
 # Check dependencies
-optimizer_framework.check_dependencies()
+atlas.check_dependencies()
 ```

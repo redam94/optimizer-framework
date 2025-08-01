@@ -37,10 +37,10 @@ Key differentiators:
 
 ```bash
 # Basic installation
-pip install optimizer-framework
+pip install atlas-optimizer
 
 # Full installation with all features
-pip install optimizer-framework[all]
+pip install atlas-optimizer[all]
 ```
 
 ### Can I use this with my existing models?
@@ -48,7 +48,7 @@ pip install optimizer-framework[all]
 Yes! The framework is designed to work with any model:
 
 ```python
-from optimizer_framework import ModelWrapper
+from atlas import ModelWrapper
 
 # Wrap your existing model
 wrapped_model = ModelWrapper(
@@ -84,7 +84,7 @@ model = CloudModelWrapper(
 ### How do I integrate a scikit-learn model?
 
 ```python
-from optimizer_framework.models import SklearnModelWrapper
+from atlas.models import SklearnModelWrapper
 import joblib
 
 # Load your trained model
@@ -104,7 +104,7 @@ Yes, through the R-Python bridge or Docker:
 
 ```python
 # Option 1: Using rpy2
-from optimizer_framework.models import RModelWrapper
+from atlas.models import RModelWrapper
 
 r_model = RModelWrapper(
     model_path="model.rds",
@@ -139,7 +139,7 @@ class PreprocessedModel(AbstractModel):
 
 ```python
 # TensorFlow/Keras example
-from optimizer_framework.models import TensorFlowModelWrapper
+from atlas.models import TensorFlowModelWrapper
 
 tf_model = TensorFlowModelWrapper(
     model_path="saved_model/",
@@ -150,7 +150,7 @@ tf_model = TensorFlowModelWrapper(
 )
 
 # PyTorch example
-from optimizer_framework.models import PyTorchModelWrapper
+from atlas.models import PyTorchModelWrapper
 
 torch_model = PyTorchModelWrapper(
     model_path="model.pt",
@@ -252,7 +252,7 @@ Try these solutions:
 
 2. **Enable caching**:
    ```python
-   from optimizer_framework.utils import CachedModel
+   from atlas.utils import CachedModel
    
    cached_model = CachedModel(
        base_model=your_model,
@@ -309,7 +309,7 @@ model = NeuralModel(device='cuda')
 
 3. **As a service**:
    ```python
-   from optimizer_framework.server import create_app
+   from atlas.server import create_app
    
    app = create_app(model, optimizer)
    app.run(host='0.0.0.0', port=8000)
@@ -319,7 +319,7 @@ model = NeuralModel(device='cuda')
 
 ```python
 # Enable monitoring
-from optimizer_framework.monitoring import MetricsCollector
+from atlas.monitoring import MetricsCollector
 
 collector = MetricsCollector()
 optimizer.add_callback(collector)
@@ -335,7 +335,7 @@ print(f"Success rate: {metrics['success_rate']}")
 Yes, using the scheduling module:
 
 ```python
-from optimizer_framework.scheduling import OptimizationScheduler
+from atlas.scheduling import OptimizationScheduler
 
 scheduler = OptimizationScheduler(optimizer)
 
@@ -390,7 +390,7 @@ import logging
 
 # Set up logging
 logging.basicConfig(level=logging.DEBUG)
-logger = logging.getLogger('optimizer_framework')
+logger = logging.getLogger('atlas')
 
 # Enable optimization trace
 optimizer = OptimizerFactory.create(
@@ -411,7 +411,7 @@ result.save_trace('optimization_trace.json')
 Yes, normalization often improves optimization:
 
 ```python
-from optimizer_framework.preprocessing import BudgetNormalizer
+from atlas.preprocessing import BudgetNormalizer
 
 normalizer = BudgetNormalizer(method='minmax')
 normalized_budget = normalizer.fit_transform(budget)
@@ -433,7 +433,7 @@ Depends on your domain:
 Set up monitoring to detect model drift:
 
 ```python
-from optimizer_framework.monitoring import ModelDriftDetector
+from atlas.monitoring import ModelDriftDetector
 
 detector = ModelDriftDetector(
     reference_data=historical_data,
@@ -447,7 +447,7 @@ if detector.detect_drift(current_data):
 ### What's the best way to handle multiple currencies?
 
 ```python
-from optimizer_framework.utils import CurrencyConverter
+from atlas.utils import CurrencyConverter
 
 converter = CurrencyConverter(base_currency='USD')
 
@@ -470,7 +470,7 @@ result = optimizer.optimize(normalized_budgets, constraints)
 Yes, extend the BaseOptimizer class:
 
 ```python
-from optimizer_framework.optimizers import BaseOptimizer
+from atlas.optimizers import BaseOptimizer
 
 class MyCustomOptimizer(BaseOptimizer):
     def optimize(self, initial_budget, constraints):
@@ -489,7 +489,7 @@ OptimizerFactory.register('custom', MyCustomOptimizer)
 Use stochastic optimization:
 
 ```python
-from optimizer_framework.stochastic import StochasticOptimizer
+from atlas.stochastic import StochasticOptimizer
 
 # Define uncertainty model
 uncertainty_model = GaussianUncertainty(std_dev=0.1)
@@ -532,10 +532,9 @@ optimizer.optimize(
 
 ### Where can I get help?
 
-1. **Documentation**: [optimizer-framework.readthedocs.io](https://optimizer-framework.readthedocs.io)
+1. **Documentation**: [Readthedocs](https://atlas.mattreda.pro)
 2. **GitHub Issues**: Report bugs and request features
-3. **Community Forum**: [forum.optimizer-framework.org](https://forum.optimizer-framework.org)
-4. **Email Support**: support@optimizer-framework.org
+
 
 ### How do I report a bug?
 
@@ -543,8 +542,8 @@ optimizer.optimize(
 2. Create a minimal reproducible example
 3. Include system information:
    ```python
-   import optimizer_framework
-   optimizer_framework.show_versions()
+   import atlas
+   atlas.show_versions()
    ```
 4. Submit issue with clear description
 

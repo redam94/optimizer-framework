@@ -13,14 +13,14 @@ This guide will get you up and running with Atlas in just a few minutes. By the 
 ### Install from PyPI
 
 ```bash
-pip install optimizer-framework
+pip install atlas-optimizer
 ```
 
 ### Install from Source
 
 ```bash
-git clone https://github.com/redam94/optimizer-framework.git
-cd optimizer-framework
+git clone https://github.com/redam94/atlas.git
+cd atlas
 pip install -e ".[dev]"
 ```
 
@@ -31,13 +31,13 @@ Let's optimize a simple marketing budget allocation across three channels: TV, D
 ### Step 1: Import Required Components
 
 ```python
-from optimizer_framework import (
+from atlas import (
     OptimizationService,
     ModelFactory,
     OptimizerFactory,
     ConfigurationManager
 )
-from optimizer_framework.models import SimpleLinearModel
+from atlas.models import SimpleLinearModel
 import numpy as np
 ```
 
@@ -123,8 +123,8 @@ Expected Return: $1,830,000
 Now let's tackle a more realistic scenario where we optimize for multiple objectives:
 
 ```python
-from optimizer_framework.strategies import MultiObjectiveStrategy
-from optimizer_framework.models import ModelWrapper
+from atlas.strategies import MultiObjectiveStrategy
+from atlas.models import ModelWrapper
 import xarray as xr
 
 # Step 1: Load your existing model
@@ -197,7 +197,7 @@ result.generate_executive_summary()
 If your model is containerized, integration is just as simple:
 
 ```python
-from optimizer_framework.models import DockerModelWrapper
+from atlas.models import DockerModelWrapper
 
 # Connect to dockerized model
 model = DockerModelWrapper(
@@ -252,7 +252,7 @@ print(comparison.to_dataframe())
 ### 2. Real-Time Optimization
 
 ```python
-from optimizer_framework.realtime import RealtimeOptimizer
+from atlas.realtime import RealtimeOptimizer
 
 # Setup real-time optimizer
 rt_optimizer = RealtimeOptimizer(
@@ -276,7 +276,7 @@ print(f"Recommended reallocation: {status['recommended_changes']}")
 ### 3. Model Registry Usage
 
 ```python
-from optimizer_framework import ModelRegistry
+from atlas import ModelRegistry
 
 # Initialize registry
 registry = ModelRegistry()
@@ -341,7 +341,7 @@ constraints:
 Load and use configuration:
 
 ```python
-from optimizer_framework import ConfigurationManager
+from atlas import ConfigurationManager
 
 # Load configuration
 config = ConfigurationManager.load('config/optimizer_config.yaml')
@@ -373,7 +373,7 @@ Now that you've completed the quick start:
 ### Issue: ImportError
 ```python
 # Solution: Ensure you've installed all dependencies
-pip install optimizer-framework[all]
+pip install atlas-optimizer[all]
 ```
 
 ### Issue: Model Not Found

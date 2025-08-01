@@ -20,12 +20,12 @@ import numpy as np
 import pandas as pd
 import xarray as xr
 from datetime import datetime, timedelta
-from optimizer_framework import (
+from atlas import (
     ModelWrapper, 
     OptimizerFactory,
     ConfigurationManager
 )
-from optimizer_framework.strategies import MediaMixOptimizationStrategy
+from atlas.strategies import MediaMixOptimizationStrategy
 import matplotlib.pyplot as plt
 import seaborn as sns
 
