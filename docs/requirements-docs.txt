@@ -1,0 +1,19 @@
+# Documentation dependencies
+
+sphinx>=5.0.0
+sphinx-rtd-theme>=1.0.0
+sphinx-copybutton>=0.5.0
+sphinx-tabs>=3.2.0
+sphinx-autodoc-typehints>=1.12.0
+myst-parser>=0.18.0
+nbsphinx>=0.8.0
+sphinx-autobuild>=2021.3.14
+sphinxcontrib-mermaid>=0.7.1
+
+# For API documentation
+autodoc>=0.5.0
+napoleon>=0.7
+
+# For notebooks
+jupyter>=1.0.0
+ipykernel>=6.0.0

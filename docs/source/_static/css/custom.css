@@ -1,0 +1,317 @@
+/* ==========================================================================
+   Modern & Minimalist Sphinx Theme
+   ========================================================================== */
+
+/* --- Root Variables: A refined, modern color palette --- */
+:root {
+    /* Primary color for branding, links, and active states. A professional, muted blue. */
+    --primary-color: #3B82F6; /* blue-500 from Tailwind */
+    /* A lighter shade for hover effects. */
+    --primary-color-light: #60A5FA; /* blue-400 */
+    /* A darker shade for borders or pressed states. */
+    --primary-color-dark: #2563EB; /* blue-600 */
+
+    /* Text colors for hierarchy and readability. */
+    --text-primary: #1F2937; /* gray-800 */
+    --text-secondary: #4B5563; /* gray-600 */
+    --text-muted: #6B7280; /* gray-500 */
+    --text-on-dark: #F9FAFB; /* gray-50 */
+
+    /* Background colors for layout and depth. */
+    --bg-main: #FFFFFF; /* White */
+    --bg-sidebar: #111827; /* gray-900 */
+    --bg-subtle: #F9FAFB; /* gray-50 */
+    --bg-code: #F3F4F6; /* gray-100 */
+
+    /* Accent colors for admonitions. */
+    --accent-note: #3B82F6; /* blue-500 */
+    --accent-warning: #F59E0B; /* amber-500 */
+    --accent-tip: #10B981; /* emerald-500 */
+    --accent-important: #EF4444; /* red-500 */
+
+    /* General UI element colors. */
+    --border-color: #E5E7EB; /* gray-200 */
+
+    /* Typography */
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+
+    /* Spacing & Sizing */
+    --content-width: 80ch; /* Optimal reading width */
+    --border-radius: 6px;
+}
+
+/* --- General Body & Typography --- */
+body {
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text-primary);
+    background-color: var(--bg-main);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    margin: 2.5rem 0 1.25rem 0;
+    line-height: 1.3;
+    color: var(--text-primary);
+}
+
+h1 {
+    font-size: 2.25rem; /* 36px */
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+h2 {
+    font-size: 1.875rem; /* 30px */
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+h3 { font-size: 1.5rem; /* 24px */ }
+h4 { font-size: 1.25rem; /* 20px */ }
+
+p {
+    margin-bottom: 1.25rem;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: var(--primary-color-light);
+    text-decoration: underline;
+}
+
+/* --- Main Content & Layout --- */
+.wy-nav-content {
+    max-width: var(--content-width); /* Constrain line length for readability */
+}
+
+/* --- Sidebar Navigation --- */
+.wy-nav-side {
+    background: var(--bg-sidebar);
+}
+
+.wy-side-nav-search {
+    background: var(--bg-sidebar);
+    padding: 1rem;
+}
+
+.wy-side-nav-search > a, .wy-side-nav-search .wy-dropdown > a {
+    color: var(--text-on-dark);
+    font-weight: 600;
+}
+
+.wy-side-nav-search input[type="text"] {
+    background-color: #1F2937; /* gray-800 */
+    border: 1px solid #374151; /* gray-700 */
+    border-radius: var(--border-radius);
+    color: var(--text-on-dark);
+    transition: all 0.2s ease;
+}
+
+.wy-side-nav-search input[type="text"]:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+}
+
+
+.wy-menu-vertical a {
+    color: #D1D5DB; /* gray-300 */
+    transition: background-color 0.2s ease, color 0.2s ease;
+    padding: 0.6rem 1.5rem;
+    font-size: 0.95rem;
+}
+
+.wy-menu-vertical a:hover {
+    background-color: #1F2937; /* gray-800 */
+    color: white;
+}
+
+.wy-menu-vertical li.current > a {
+    background: var(--primary-color);
+    color: white;
+    font-weight: 500;
+    border: none;
+}
+
+.wy-menu-vertical li.current > a:hover {
+    background: var(--primary-color-light);
+}
+
+/* --- Code Blocks & Inline Code --- */
+/* Wrapper for code blocks */
+.highlight {
+    background: var(--bg-code);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    margin: 1.5rem 0;
+    position: relative;
+}
+
+.highlight pre {
+    background: transparent !important;
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+    line-height: 1.6;
+    padding: 1.25rem;
+    margin: 0;
+}
+
+/* Inline code */
+code.literal, tt {
+    background: var(--bg-code);
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+    font-size: 0.875em;
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+}
+
+/* --- Admonitions (Note, Warning, etc.) --- */
+.admonition {
+    border-radius: var(--border-radius);
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid;
+    background-color: var(--bg-subtle);
+}
+
+.admonition-title {
+    font-weight: 600;
+    margin: 0 0 0.5rem 0;
+}
+
+.admonition.note { border-left-color: var(--accent-note); }
+.admonition.warning { border-left-color: var(--accent-warning); }
+.admonition.tip { border-left-color: var(--accent-tip); }
+.admonition.important { border-left-color: var(--accent-important); }
+
+.admonition.note .admonition-title { color: var(--accent-note); }
+.admonition.warning .admonition-title { color: var(--accent-warning); }
+.admonition.tip .admonition-title { color: var(--accent-tip); }
+.admonition.important .admonition-title { color: var(--accent-important); }
+
+
+/* --- Tables --- */
+table.docutils {
+    border: 1px solid var(--border-color);
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    width: 100%;
+    font-size: 0.95rem;
+}
+
+table.docutils thead {
+    background: var(--bg-subtle);
+    font-weight: 600;
+}
+
+table.docutils th, table.docutils td {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-color);
+    text-align: left;
+}
+
+table.docutils tbody tr:nth-child(even) {
+    background: var(--bg-subtle);
+}
+
+table.docutils tbody tr:hover {
+    background: #F3F4F6; /* gray-100 */
+}
+
+/* --- sphinx-design Cards --- */
+.grid-item-card {
+    background: var(--bg-main);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    text-decoration: none;
+    color: inherit !important; /* Override sphinx-design link color */
+}
+
+.grid-item-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+    border-color: var(--primary-color);
+}
+
+.grid-item-card > p:last-child {
+    margin-bottom: 0;
+}
+
+.sd-card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* --- API Documentation --- */
+.py.class, .py.method, .py.function {
+    margin: 2rem 0;
+    padding: 1rem;
+    background: var(--bg-subtle);
+    border-left: 4px solid var(--primary-color);
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+}
+
+.sig-name {
+    font-weight: 600;
+    font-family: var(--font-mono);
+}
+
+.sig-param {
+    color: var(--text-secondary);
+}
+
+/* --- Copy Button for Code Blocks --- */
+.copy-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    padding: 0.3rem 0.6rem;
+    background: #E5E7EB; /* gray-200 */
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s ease, background-color 0.2s ease;
+}
+
+.highlight:hover .copy-button {
+    opacity: 1;
+}
+
+.copy-button:hover {
+    background: #D1D5DB; /* gray-300 */
+}
+
+/* --- Responsive Design --- */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+
+    .wy-nav-content {
+        padding: 1rem;
+    }
+}
+
+/* --- Font Imports --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
