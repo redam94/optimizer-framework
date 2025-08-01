@@ -3,7 +3,7 @@
 [![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Documentation](https://img.shields.io/badge/docs-latest-brightgreen.svg)](https://atlas.mattreda.pro)
-[![Build Status](https://github.com/redam94/optimizer-framework/workflows/CI/badge.svg)](https://github.com/redam94/optimizer-framework/actions)
+[![Build Status](https://github.com/redam94/optimizer-framework/workflows/CI/badge.svg)](https://github.com/redam94/atlas/actions)
 [![codecov](https://codecov.io/gh/redam94/optimizer-framework/branch/main/graph/badge.svg)](https://codecov.io/gh/redam94/optimizer-framework)
 [![PyPI version](https://badge.fury.io/py/optimizer-framework.svg)](https://badge.fury.io/py/optimizer-framework)
 
@@ -26,21 +26,21 @@ Atlas enables data-driven decision making by standardizing how different predict
 ### Installation
 
 ```bash
-pip install optimizer-framework
+pip install atlas-optimizer
 ```
 
 For development installation:
 ```bash
-git clone https://github.com/redam94/optimizer-framework.git
-cd optimizer-framework
+git clone https://github.com/redam94/atlas.git
+cd atlas
 pip install -e ".[dev]"
 ```
 
 ### Basic Usage
 
 ```python
-from optimizer_framework import OptimizationService, ModelFactory, OptimizerFactory
-from optimizer_framework.config import ConfigurationManager
+from atlas import OptimizationService, ModelFactory, OptimizerFactory
+from atlas.config import ConfigurationManager
 
 # Load configuration
 config_manager = ConfigurationManager()
@@ -85,8 +85,8 @@ print(f"Expected outcome: {result.optimal_value}")
 ### Marketing Mix Modeling (MMM)
 
 ```python
-from optimizer_framework.models import MarketingMixModel
-from optimizer_framework.optimizers import MultiObjectiveOptimizer
+from atlas.models import MarketingMixModel
+from atlas.optimizers import MultiObjectiveOptimizer
 
 # Load your trained MMM model
 mmm_model = MarketingMixModel.from_pretrained("path/to/model")
@@ -109,7 +109,7 @@ result = optimizer.optimize(
 ### Custom Model Integration
 
 ```python
-from optimizer_framework.models import AbstractModel
+from atlas.models import AbstractModel
 import xarray as xr
 
 class MyCustomModel(AbstractModel):
@@ -256,7 +256,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- 🐛 Issues: [GitHub Issues](https://github.com/redam94/optimizer-framework/issues)
+- 🐛 Issues: [GitHub Issues](https://github.com/redam94/atlas/issues)
 - 📚 Docs: [Read the Docs](https://atlas.mattreda.pro/en/latest/)
 
 ---

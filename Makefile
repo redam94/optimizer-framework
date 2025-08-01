@@ -19,7 +19,7 @@ install-dev:
 	pre-commit install
 
 test:
-	pytest tests/ -v --cov=optimizer_framework
+	pytest tests/ -v --cov=atlas
 
 lint:
 	flake8 src tests
