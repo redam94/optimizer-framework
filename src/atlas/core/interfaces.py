@@ -12,11 +12,11 @@ class ModelProtocol(Protocol):
 
     def predict(self, x: xr.Dataset) -> xr.DataArray:
         """Generate predictions from input data."""
-        ...
+        ...  # pragma: no cover
 
     def contributions(self, x: xr.Dataset) -> xr.Dataset:
         """Calculate feature contributions."""
-        ...
+        ...  # pragma: no cover
 
 
 class AbstractModel(ABC):
@@ -33,7 +33,7 @@ class AbstractModel(ABC):
         Returns:
             Predictions as DataArray with appropriate dimensions
         """
-        pass
+        pass  # pragma: no cover
 
     @abstractmethod
     def contributions(self, x: xr.Dataset) -> xr.Dataset:
@@ -46,19 +46,19 @@ class AbstractModel(ABC):
         Returns:
             Dataset containing contribution information
         """
-        pass
+        pass  # pragma: no cover
 
     @property
     @abstractmethod
     def model_type(self) -> str:
         """Return the type identifier for this model."""
-        pass
+        pass  # pragma: no cover
 
     @property
     @abstractmethod
     def required_dimensions(self) -> list[str]:
         """Return list of required dimensions for input data."""
-        pass
+        pass  # pragma: no cover
 
 
 class OptimizerProtocol(Protocol):
@@ -68,7 +68,7 @@ class OptimizerProtocol(Protocol):
         self, model: ModelProtocol, constraints: Dict[str, Any], config: Dict[str, Any]
     ) -> "OptimizationResult":
         """Run optimization."""
-        ...
+        ...  # pragma: no cover
 
 
 class OptimizationResult(BaseModel):

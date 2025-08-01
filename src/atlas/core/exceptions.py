@@ -4,34 +4,34 @@
 class OptimizerFrameworkError(Exception):
     """Base exception for all framework errors."""
 
-    pass
+    pass  # pragma: no cover
 
 
 class ConfigurationError(OptimizerFrameworkError):
     """Raised when configuration is invalid or missing."""
 
-    pass
+    pass  # pragma: no cover
 
 
 class ModelError(OptimizerFrameworkError):
     """Raised when model operations fail."""
 
-    pass
+    pass  # pragma: no cover
 
 
 class OptimizationError(OptimizerFrameworkError):
     """Raised when optimization fails."""
 
-    pass
+    pass  # pragma: no cover
 
 
 class DataValidationError(OptimizerFrameworkError):
     """Raised when data validation fails."""
 
-    pass
+    pass  # pragma: no cover
 
 
 class ConstraintViolationError(OptimizationError):
     """Raised when constraints cannot be satisfied."""
 
-    pass
+    pass  # pragma: no cover
