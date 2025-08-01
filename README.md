@@ -1,11 +1,11 @@
-# 🎯 Optimize Framework
+# 🎯 Optimizer Framework
 
 [![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Documentation](https://img.shields.io/badge/docs-latest-brightgreen.svg)](https://optimize-framework.readthedocs.io)
-[![Build Status](https://github.com/redam94/optimize-framework/workflows/CI/badge.svg)](https://github.com/redam94/optimize-framework/actions)
-[![codecov](https://codecov.io/gh/redam94/optimize-framework/branch/main/graph/badge.svg)](https://codecov.io/gh/redam94/optimize-framework)
-[![PyPI version](https://badge.fury.io/py/optimize-framework.svg)](https://badge.fury.io/py/optimize-framework)
+[![Documentation](https://img.shields.io/badge/docs-latest-brightgreen.svg)](https://optimizer-framework.readthedocs.io)
+[![Build Status](https://github.com/redam94/optimizer-framework/workflows/CI/badge.svg)](https://github.com/redam94/optimizer-framework/actions)
+[![codecov](https://codecov.io/gh/redam94/optimizer-framework/branch/main/graph/badge.svg)](https://codecov.io/gh/redam94/optimizer-framework)
+[![PyPI version](https://badge.fury.io/py/optimizer-framework.svg)](https://badge.fury.io/py/optimizer-framework)
 
 **A unified framework for optimizing budget allocations across diverse models and scenarios.**
 
@@ -26,21 +26,21 @@ Optimize Framework enables data-driven decision making by standardizing how diff
 ### Installation
 
 ```bash
-pip install optimize-framework
+pip install optimizer-framework
 ```
 
 For development installation:
 ```bash
-git clone https://github.com/yourusername/optimize-framework.git
-cd optimize-framework
+git clone https://github.com/redam94/optimizer-framework.git
+cd optimizer-framework
 pip install -e ".[dev]"
 ```
 
 ### Basic Usage
 
 ```python
-from optimize_framework import OptimizationService, ModelFactory, OptimizerFactory
-from optimize_framework.config import ConfigurationManager
+from optimizer_framework import OptimizationService, ModelFactory, OptimizerFactory
+from optimizer_framework.config import ConfigurationManager
 
 # Load configuration
 config_manager = ConfigurationManager()
@@ -85,8 +85,8 @@ print(f"Expected outcome: {result.optimal_value}")
 ### Marketing Mix Modeling (MMM)
 
 ```python
-from optimize_framework.models import MarketingMixModel
-from optimize_framework.optimizers import MultiObjectiveOptimizer
+from optimizer_framework.models import MarketingMixModel
+from optimizer_framework.optimizers import MultiObjectiveOptimizer
 
 # Load your trained MMM model
 mmm_model = MarketingMixModel.from_pretrained("path/to/model")
@@ -109,7 +109,7 @@ result = optimizer.optimize(
 ### Custom Model Integration
 
 ```python
-from optimize_framework.models import AbstractModel
+from optimizer_framework.models import AbstractModel
 import xarray as xr
 
 class MyCustomModel(AbstractModel):
@@ -202,11 +202,11 @@ graph TB
 
 ## 📖 Documentation
 
-- [Getting Started Guide](https://optimize-framework.readthedocs.io/getting-started)
-- [API Reference](https://optimize-framework.readthedocs.io/api)
-- [Model Integration Guide](https://optimize-framework.readthedocs.io/models)
-- [Optimization Strategies](https://optimize-framework.readthedocs.io/optimization)
-- [Examples Gallery](https://optimize-framework.readthedocs.io/examples)
+- [Getting Started Guide](https://optimizer-framework.readthedocs.io/getting-started)
+- [API Reference](https://optimizer-framework.readthedocs.io/api)
+- [Model Integration Guide](https://optimizer-framework.readthedocs.io/models)
+- [Optimization Strategies](https://optimizer-framework.readthedocs.io/optimization)
+- [Examples Gallery](https://optimizer-framework.readthedocs.io/examples)
 
 ## 🤝 Contributing
 
@@ -214,7 +214,7 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 
 ```bash
 # Fork and clone the repository
-git clone https://github.com/redam94/optimize-framework.git
+git clone https://github.com/redam94/optimizer-framework.git
 
 # Create a feature branch
 git checkout -b feature/amazing-feature
@@ -256,8 +256,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- 🐛 Issues: [GitHub Issues](https://github.com/redam94/optimize-framework/issues)
-- 📚 Docs: [Read the Docs](https://optimize-framework.readthedocs.io)
+- 🐛 Issues: [GitHub Issues](https://github.com/redam94/optimizer-framework/issues)
+- 📚 Docs: [Read the Docs](https://optimizer-framework.readthedocs.io)
 
 ---
 
