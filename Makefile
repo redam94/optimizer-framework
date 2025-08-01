@@ -9,7 +9,6 @@ help:
 	@echo "  test         Run tests"
 	@echo "  lint         Run linting"
 	@echo "  format       Format code"
-	@echo "  docs         Build documentation"
 	@echo "  clean        Clean build artifacts"
 
 install:
@@ -23,17 +22,14 @@ test:
 	pytest tests/ -v --cov=optimizer_framework
 
 lint:
-	flake8 optimizer_framework tests
-	mypy optimizer_framework
-	black --check optimizer_framework tests
-	isort --check-only optimizer_framework tests
+	flake8 src tests
+	mypy src
+	black --check src tests
+	isort --check-only src tests
 
 format:
-	black optimizer_framework tests scripts
-	isort optimizer_framework tests scripts
-
-docs:
-	nbdev_docs
+	black src tests scripts
+	isort src tests scripts
 
 clean:
 	rm -rf build dist *.egg-info
