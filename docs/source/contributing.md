@@ -60,8 +60,8 @@ If you're new to open source or this project:
 1. **Fork the repository**
    ```bash
    # Click "Fork" on GitHub, then clone your fork
-   git clone https://github.com/YOUR_USERNAME/optimizer-framework.git
-   cd optimizer-framework
+   git clone https://github.com/YOUR_USERNAME/atlas.git
+   cd atlas
    ```
 
 2. **Create a virtual environment**
@@ -81,7 +81,7 @@ If you're new to open source or this project:
 
 4. **Set up remote tracking**
    ```bash
-   git remote add upstream https://github.com/redam94/optimizer-framework.git
+   git remote add upstream https://github.com/redam94/atlas.git
    git fetch upstream
    ```
 
