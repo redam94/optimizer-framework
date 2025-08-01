@@ -120,18 +120,11 @@ Getting Help
 ------------
 
 * **Documentation**: You're here! 📖
-* **GitHub**: `github.com/redam94/optimizer-framework <https://github.com/redam94/optimizer-framework>`_
-* **Issues**: `Report bugs or request features <https://github.com/redam94/optimizer-framework/issues>`_
-* **Discussions**: `Join the community <https://github.com/redam94/optimizer-framework/discussions>`_
+* **GitHub**: `github.com/redam94/atlas <https://github.com/redam94/atlas>`_
+* **Issues**: `Report bugs or request features <https://github.com/redam94/atlas/issues>`_
+
 
 License
 -------
 
 Atlas is open source software licensed under the MIT license.
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
