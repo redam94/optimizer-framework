@@ -5,7 +5,7 @@ We welcome contributions to the Optimize Framework! This document provides guide
 ## Getting Started
 
 1. Fork the repository
-2. Clone your fork: `git clone https://github.com/yourusername/optimize-framework.git`
+2. Clone your fork: `git clone https://github.com/yourusername/optimizer-framework.git`
 3. Create a new branch: `git checkout -b feature/your-feature-name`
 4. Set up development environment: `make install-dev`
 
