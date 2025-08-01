@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Documentation](https://img.shields.io/badge/docs-latest-brightgreen.svg)](https://atlas.mattreda.pro)
 [![Build Status](https://github.com/redam94/optimizer-framework/workflows/CI/badge.svg)](https://github.com/redam94/atlas/actions)
-[![codecov](https://codecov.io/gh/redam94/optimizer-framework/branch/main/graph/badge.svg)](https://codecov.io/gh/redam94/optimizer-framework)
+[![codecov](https://codecov.io/gh/redam94/atlas/branch/main/graph/badge.svg?token=ALXRHYI5K7)](https://codecov.io/gh/redam94/atlas)
 [![PyPI version](https://badge.fury.io/py/optimizer-framework.svg)](https://badge.fury.io/py/optimizer-framework)
 
 **An adaptable toolset for learning and strategy. The unified framework for optimizing budget allocations across diverse models and scenarios.**

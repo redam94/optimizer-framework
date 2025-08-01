@@ -26,4 +26,4 @@ jobs:
         uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          slug: redam94/optimizer-framework
+          slug: redam94/atlas
