@@ -19,7 +19,7 @@ pip install optimizer-framework
 ### Install from Source
 
 ```bash
-git clone https://github.com/your-org/optimizer-framework.git
+git clone https://github.com/redam94/optimizer-framework.git
 cd optimizer-framework
 pip install -e ".[dev]"
 ```
@@ -364,10 +364,9 @@ Now that you've completed the quick start:
 
 ## Getting Help
 
-- **Documentation**: Full documentation at [optimizer-framework.readthedocs.io](https://optimizer-framework.readthedocs.io)
+- **Documentation**: Full documentation at [atlas.mattreda.pro](https://atlas.mattreda.pro)
 - **GitHub Issues**: Report bugs or request features
 - **Community Forum**: Ask questions and share experiences
-- **Email Support**: support@optimizer-framework.org
 
 ## Common Issues
 

@@ -1,15 +1,15 @@
-# 🎯 Optimizer Framework
+# 🎯 Atlas
 
 [![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Documentation](https://img.shields.io/badge/docs-latest-brightgreen.svg)](https://optimizer-framework.readthedocs.io)
+[![Documentation](https://img.shields.io/badge/docs-latest-brightgreen.svg)](https://atlas.mattreda.pro)
 [![Build Status](https://github.com/redam94/optimizer-framework/workflows/CI/badge.svg)](https://github.com/redam94/optimizer-framework/actions)
 [![codecov](https://codecov.io/gh/redam94/optimizer-framework/branch/main/graph/badge.svg)](https://codecov.io/gh/redam94/optimizer-framework)
 [![PyPI version](https://badge.fury.io/py/optimizer-framework.svg)](https://badge.fury.io/py/optimizer-framework)
 
-**A unified framework for optimizing budget allocations across diverse models and scenarios.**
+**An adaptable toolset for learning and strategy. The unified framework for optimizing budget allocations across diverse models and scenarios.**
 
-Optimize Framework enables data-driven decision making by standardizing how different predictive models interact with optimization algorithms, ensuring consistent and reliable budget recommendations at scale.
+Atlas enables data-driven decision making by standardizing how different predictive models interact with optimization algorithms, ensuring consistent and reliable budget recommendations at scale.
 
 ## ✨ Key Features
 
@@ -202,15 +202,15 @@ graph TB
 
 ## 📖 Documentation
 
-- [Getting Started Guide](https://optimizer-framework.readthedocs.io/getting-started)
-- [API Reference](https://optimizer-framework.readthedocs.io/api)
-- [Model Integration Guide](https://optimizer-framework.readthedocs.io/models)
-- [Optimization Strategies](https://optimizer-framework.readthedocs.io/optimization)
-- [Examples Gallery](https://optimizer-framework.readthedocs.io/examples)
+- [Getting Started Guide](https://atlas.mattreda.pro/en/latest/quickstart.html)
+- [API Reference](https://atlas.mattreda.pro/en/latest/api)
+- [Model Integration Guide](https://optimizer-framework.readthedocs.io/en/latest/guides/model_integration.html)
+- [Optimization Strategies] (coming soon)
+- [Examples Gallery] (coming soon)
 
 ## 🤝 Contributing
 
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+We welcome contributions! Please see our [Contributing Guide](https://atlas.mattreda.pro/en/latest/contributing.html) for details.
 
 ```bash
 # Fork and clone the repository
@@ -257,7 +257,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 
 - 🐛 Issues: [GitHub Issues](https://github.com/redam94/optimizer-framework/issues)
-- 📚 Docs: [Read the Docs](https://optimizer-framework.readthedocs.io)
+- 📚 Docs: [Read the Docs](https://atlas.mattreda.pro/en/latest/)
 
 ---
 

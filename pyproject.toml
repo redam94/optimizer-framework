@@ -44,6 +44,8 @@ docs = [
     "nbsphinx>=0.8.0",
     "sphinx-autobuild>=2021.3.14",
     "sphinxcontrib-mermaid>=0.7.1",
+    "sphinx-design>=0.6.1",
+    "linkify-it-py>=2.0.3",
 ]
 
 dev = [
