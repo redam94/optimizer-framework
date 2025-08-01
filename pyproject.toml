@@ -103,11 +103,11 @@ warn_unused_ignores = true
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-addopts = "-ra --strict-markers --cov=optimizer_framework"
+addopts = "-ra --strict-markers --cov=atlas"
 
 [tool.coverage.run]
 branch = true
-source = ["optimizer_framework"]
+source = ["atlas"]
 
 [tool.coverage.report]
 exclude_lines = [
