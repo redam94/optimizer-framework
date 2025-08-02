@@ -1,7 +1,7 @@
 # 🎯 Atlas
 
 [![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/downloads/)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-Dual-green.svg)](LICENSE)
 [![Documentation](https://img.shields.io/badge/docs-latest-brightgreen.svg)](https://atlas.mattreda.pro)
 [![Build Status](https://github.com/redam94/optimizer-framework/workflows/CI/badge.svg)](https://github.com/redam94/atlas/actions)
 [![codecov](https://codecov.io/gh/redam94/atlas/branch/main/graph/badge.svg?token=ALXRHYI5K7)](https://codecov.io/gh/redam94/atlas)

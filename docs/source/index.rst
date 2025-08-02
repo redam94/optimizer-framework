@@ -142,4 +142,4 @@ Getting Help
 License
 -------
 
-Atlas is open source software licensed under the MIT license.
+Atlas is open source software licensed under the APGL license for non-commercial use.

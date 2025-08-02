@@ -6,7 +6,7 @@ Atlas is a unified optimization framework that enables data-driven budget alloca
 
 Atlas operates on four core concepts that work together to solve complex optimization problems:
 
-1. **[Models](#models)** - Predictive models that estimate outcomes from budget allocations
+1. **[Models](#models)** - Predictive models that estimate outcomes
 2. **[Optimization](#optimization)** - Algorithms and strategies for finding optimal solutions
 3. **[Constraints](#constraints)** - Business rules and limitations that solutions must satisfy
 4. **[Data](#data)** - Multi-dimensional data structures and management
@@ -15,7 +15,7 @@ Atlas operates on four core concepts that work together to solve complex optimiz
 
 ## Data
 
-Data management in Atlas handles the complex, multi-dimensional nature of budget allocation problems. The framework uses Xarray as its foundation for powerful and flexible data structures. See [Data](data.md) for more detail.
+Data management in Atlas handles the complex, multi-dimensional nature of many problems a business might face. The framework uses Xarray as its foundation for powerful and flexible data structures. See [Data](data.md) for more detail.
 
 ### Data Architecture
 
@@ -53,7 +53,7 @@ budget = xr.DataArray(
 complex_budget = xr.Dataset({
     'budget': xr.DataArray(
         data=np.random.rand(3, 2, 12, 4) * 1_000_000,
-        dims=['channel', 'region', month', 'product'],
+        dims=['channel', 'region', 'month', 'product'],
         coords={
             'channel': ['digital', 'tv', 'radio'],
             'region': ['north', 'south'],
@@ -372,7 +372,7 @@ optimized_data = budget_data.astype({
 
 ## Models
 
-Models in Atlas are the predictive engines that estimate outcomes (revenue, awareness, conversions, etc.) based on actions that can be taken. The framework is designed to be completely model-agnostic, supporting any type of predictive model. [Models](models.md)
+Models in Atlas are the predictive engines that estimate outcomes (revenue, awareness, conversions, etc.) based on decisions a business makes. Atlas is designed to be completely model-agnostic, supporting any type of predictive model. [Models](models.md)
 
 ### Model Types
 
@@ -470,13 +470,13 @@ model = APIModel(
 All models must implement the `BaseModel` interface with these key methods:
 
 #### **Required Methods**
-- `predict(budget_allocation)`: Core prediction method
-- `validate_input(budget_allocation)`: Input validation
+- `predict(optimization_levers)`: Core prediction method
+- `validate_input(optimization_levers)`: Input validation
 - `get_feature_names()`: Return expected input features
 
 #### **Optional Methods**
-- `predict_confidence(budget_allocation)`: Uncertainty estimates
-- `explain_prediction(budget_allocation)`: Model interpretability
+- `predict_confidence(optimization_levers)`: Uncertainty estimates
+- `explain_prediction(optimization_levers)`: Model interpretability
 - `health_check()`: Model availability status
 
 ### Model Validation

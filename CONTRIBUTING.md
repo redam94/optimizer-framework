@@ -1,6 +1,6 @@
 # Contributing to Atlas
 
-We welcome contributions to Atlas! This document provides guidelines for contributing to the project.
+We welcome contributions to Atlas! This document provides guidelines for contributing to the project. All contributions are subject to the contributor licensing agreement see [CONTRIBUTOR-LICENSE](CONTRIBUTOR-LICENSE.md)
 
 ## Getting Started
 
