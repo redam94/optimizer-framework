@@ -1,1 +1,1 @@
-"""Package initialization."""
+from . import sklearn_wrapper
