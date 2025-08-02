@@ -39,6 +39,8 @@ Atlas empowers data-driven organizations to maximize ROI through intelligent bud
 
    guides/model_integration
    guides/optimization_strategies
+   guides/production_deployment
+   guides/configuration
 
 .. toctree::
    :maxdepth: 2
@@ -53,6 +55,7 @@ Atlas empowers data-driven organizations to maximize ROI through intelligent bud
    :hidden:
 
    examples/marketing_mix
+   examples/scikit_learn
 
 .. toctree::
    :maxdepth: 1
