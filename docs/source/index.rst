@@ -26,11 +26,15 @@ Atlas empowers data-driven organizations to maximize ROI through intelligent bud
 
 .. toctree::
    :maxdepth: 2
-   :caption: Concepts
+   :caption: Core Concepts
    :hidden:
 
    concepts/core
-
+   concepts/data
+   concepts/models
+   concepts/optimization
+   concepts/constraints
+   
 .. toctree::
    :maxdepth: 2
    :caption: Features
@@ -45,6 +49,7 @@ Atlas empowers data-driven organizations to maximize ROI through intelligent bud
    :hidden:
 
    guides/model_integration
+   guides/custom_optimization
    guides/optimization_strategies
    guides/production_deployment
    guides/configuration
