@@ -14,7 +14,7 @@ Welcome to Atlas Documentation
       <strong>Adaptable Toolset for Learning And Strategy</strong>
    </div>
 
-Atlas empowers data-driven organizations to maximize ROI through intelligent budget allocation across diverse models and business scenarios.
+Atlas empowers data-driven organizations to maximize ROI through intelligent business optimizations across diverse models and business scenarios.
 
 .. toctree::
    :maxdepth: 2
