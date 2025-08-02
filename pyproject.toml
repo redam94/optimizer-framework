@@ -124,5 +124,6 @@ atlas = { workspace = true }
 [dependency-groups]
 dev = [
     "linkify-it-py>=2.0.3",
+    "marimo>=0.14.16",
     "sphinx-design>=0.6.1",
 ]
