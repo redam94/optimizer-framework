@@ -31,6 +31,7 @@ dependencies = [
     "pyyaml>=6.0",
     "rich>=13.0.0",
     "structlog>=23.0.0",
+    "joblib>=1.5.1",
 ]
 
 [project.optional-dependencies]
@@ -124,6 +125,12 @@ atlas = { workspace = true }
 [dependency-groups]
 dev = [
     "linkify-it-py>=2.0.3",
+    "pandas-stubs>=2.3.0.250703",
     "marimo>=0.14.16",
     "sphinx-design>=0.6.1",
+]
+ml = [
+    "lightgbm>=4.6.0",
+    "scikit-learn>=1.7.1",
+    "xgboost>=3.0.3",
 ]

@@ -64,3 +64,13 @@ examples/*/*.h5
 examples/*/*.pkl
 examples/*/*.joblib
 examples/*/*.yaml
+
+# Ignore test artifacts
+tests/__pycache__/
+tests/*.pyc
+tests/*.pyo
+tests/*.pyd
+tests/*.pkl
+tests/*.joblib
+tests/*.h5
+tests/*.yaml
