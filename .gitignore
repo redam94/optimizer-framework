@@ -58,3 +58,9 @@ Thumbs.db
 .env
 tmp/
 output/
+
+# Example Artifacts
+examples/*/*.h5
+examples/*/*.pkl
+examples/*/*.joblib
+examples/*/*.yaml
