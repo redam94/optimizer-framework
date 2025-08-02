@@ -247,7 +247,12 @@ make test
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Atlas is dual-licensed:
+
+- [AGPL v3](./LICENSE-AGPL.txt): Free for open-source, academic, or research use
+- [Commercial License](./COMMERCIAL-LICENSE.md): For commercial or proprietary use
+
+Contact us at [mattreda@mattreda.pro] for commercial licensing options.
 
 ## 🙏 Acknowledgments
 
