@@ -249,7 +249,7 @@ make test
 
 Atlas is dual-licensed:
 
-- [AGPL v3](./LICENSE-AGPL.txt): Free for open-source, academic, or research use
+- [AGPL v3](LICENSE-AGPL.txt): Free for open-source, academic, or research use
 - [Commercial License](./COMMERCIAL-LICENSE.md): For commercial or proprietary use
 
 Contact us at [mattreda@mattreda.pro] for commercial licensing options.
