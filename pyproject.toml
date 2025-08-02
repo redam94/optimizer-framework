@@ -126,6 +126,7 @@ atlas = { workspace = true }
 dev = [
     "linkify-it-py>=2.0.3",
     "pandas-stubs>=2.3.0.250703",
+    "marimo>=0.14.16",
     "sphinx-design>=0.6.1",
 ]
 ml = [

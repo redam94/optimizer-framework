@@ -4,7 +4,7 @@
 
 ### What is Atlas?
 
-Atlas is a unified platform for optimizing budget allocations across diverse models and business scenarios. It enables data-driven organizations to maximize ROI through intelligent resource allocation, supporting any type of predictive model (ML, statistical, or API-based).
+Atlas is a unified platform for optimizing business decisions across diverse models and business scenarios. It enables data-driven organizations to maximize ROI through intelligent resource allocation, supporting any type of predictive model (ML, statistical, or API-based).
 
 ### Who should use Atlas?
 

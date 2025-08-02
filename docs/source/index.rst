@@ -14,7 +14,7 @@ Welcome to Atlas Documentation
       <strong>Adaptable Toolset for Learning And Strategy</strong>
    </div>
 
-Atlas empowers data-driven organizations to maximize ROI through intelligent budget allocation across diverse models and business scenarios.
+Atlas empowers data-driven organizations to maximize ROI through intelligent business optimizations across diverse models and business scenarios.
 
 .. toctree::
    :maxdepth: 2
@@ -24,6 +24,17 @@ Atlas empowers data-driven organizations to maximize ROI through intelligent bud
    introduction
    quickstart 
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Core Concepts
+   :hidden:
+
+   concepts/core
+   concepts/data
+   concepts/models
+   concepts/optimization
+   concepts/constraints
+   
 .. toctree::
    :maxdepth: 2
    :caption: Features
@@ -38,6 +49,7 @@ Atlas empowers data-driven organizations to maximize ROI through intelligent bud
    :hidden:
 
    guides/model_integration
+   guides/custom_optimization
    guides/optimization_strategies
    guides/production_deployment
    guides/configuration
@@ -130,4 +142,4 @@ Getting Help
 License
 -------
 
-Atlas is open source software licensed under the MIT license.
+Atlas is open source software licensed under the APGL license for non-commercial use.

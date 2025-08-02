@@ -125,9 +125,9 @@ Ready to transform your optimization capabilities? Explore our comprehensive doc
 
 - [Quick Start Guide](quickstart.md) - Get up and running in minutes
 - [Model Integration Guide](guides/model_integration.md) - Connect your existing models
-- [Optimization Strategies](guides/model_integration.md) - Advanced techniques
+- [Optimization Strategies](guides/custom_optimization.md) - Advanced techniques
 - [API Reference](api/index.md) - Detailed technical documentation
 
 ---
 
-*Atlas is an open-source project committed to democratizing advanced optimization capabilities for data-driven organizations.*
+*Atlas is an open source project committed to democratizing advanced optimization capabilities for data-driven organizations.*
