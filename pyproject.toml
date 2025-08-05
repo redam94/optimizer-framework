@@ -134,3 +134,6 @@ ml = [
     "scikit-learn>=1.7.1",
     "xgboost>=3.0.3",
 ]
+test = [
+    "types-pyyaml>=6.0.12.20250516",
+]

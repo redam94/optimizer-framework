@@ -48,6 +48,7 @@ Atlas empowers data-driven organizations to maximize ROI through intelligent bus
    :caption: Design Guides
    :hidden:
 
+   guides/black_box_model
    guides/model_integration
    guides/custom_optimization
    guides/optimization_strategies
