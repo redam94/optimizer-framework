@@ -1,0 +1,329 @@
+{
+  "visualizations": [
+    {
+      "name": "sensitivity",
+      "type": "plotly",
+      "created": "2025-08-03T10:05:29.721413",
+      "metadata": {},
+      "spec": "{\"data\":[{\"hovertemplate\":\"%{text}\\u003cbr\\u003eChange: %{x:.0f}%\\u003cbr\\u003eImpact: %{y:.1f}%\\u003cextra\\u003e\\u003c\\u002fextra\\u003e\",\"line\":{\"color\":\"#007AFF\",\"width\":3},\"marker\":{\"size\":8},\"mode\":\"lines+markers\",\"name\":\"TV\",\"text\":[\"TV\",\"TV\",\"TV\",\"TV\",\"TV\",\"TV\",\"TV\",\"TV\",\"TV\",\"TV\",\"TV\",\"TV\",\"TV\",\"TV\",\"TV\"],\"x\":{\"dtype\":\"f8\",\"bdata\":\"AQAAAAAAPsBw27Zt27Y5wNy2bdu2bTXAS5IkSZIkMcBt27Zt27YpwEuSJEmSJCHAUZIkSZIkEcAAAAAAAAAAAFGSJEmSJBFAUZIkSZIkIUBt27Zt27YpQEuSJEmSJDFA37Zt27ZtNUBt27Zt27Y5QAEAAAAAAD5A\"},\"y\":[-19.210774721664965,-17.63704388021558,-19.19769689485652,-13.243533650394134,-10.768283142647288,-3.5905839248536955,-7.036455129886503,-3.097652147729346,-10.416585463825923,-1.8402937835749145,-12.072186282284536,-4.907309531952134,-11.00207298867672,-7.7840736767822865,-3.9678019968524345],\"type\":\"scatter\"},{\"hovertemplate\":\"%{text}\\u003cbr\\u003eChange: %{x:.0f}%\\u003cbr\\u003eImpact: %{y:.1f}%\\u003cextra\\u003e\\u003c\\u002fextra\\u003e\",\"line\":{\"color\":\"#5AC8FA\",\"width\":3},\"marker\":{\"size\":8},\"mode\":\"lines+markers\",\"name\":\"Digital\",\"text\":[\"Digital\",\"Digital\",\"Digital\",\"Digital\",\"Digital\",\"Digital\",\"Digital\",\"Digital\",\"Digital\",\"Digital\",\"Digital\",\"Digital\",\"Digital\",\"Digital\",\"Digital\"],\"x\":{\"dtype\":\"f8\",\"bdata\":\"AQAAAAAAPsBw27Zt27Y5wNy2bdu2bTXAS5IkSZIkMcBt27Zt27YpwEuSJEmSJCHAUZIkSZIkEcAAAAAAAAAAAFGSJEmSJBFAUZIkSZIkIUBt27Zt27YpQEuSJEmSJDFA37Zt27ZtNUBt27Zt27Y5QAEAAAAAAD5A\"},\"y\":[-10.14198644902903,-21.11309606809334,-8.425675536157284,-15.975867344436493,-13.321459251795478,-12.949829368776559,-2.100637681343179,-0.9259649044554995,-6.569644213573509,-7.359407394157377,5.865839227270275,5.137804913777632,-4.415393398966653,-9.571142400123883,2.380178138580601],\"type\":\"scatter\"},{\"hovertemplate\":\"%{text}\\u003cbr\\u003eChange: %{x:.0f}%\\u003cbr\\u003eImpact: %{y:.1f}%\\u003cextra\\u003e\\u003c\\u002fextra\\u003e\",\"line\":{\"color\":\"#34C759\",\"width\":3},\"marker\":{\"size\":8},\"mode\":\"lines+markers\",\"name\":\"Social\",\"text\":[\"Social\",\"Social\",\"Social\",\"Social\",\"Social\",\"Social\",\"Social\",\"Social\",\"Social\",\"Social\",\"Social\",\"Social\",\"Social\",\"Social\",\"Social\"],\"x\":{\"dtype\":\"f8\",\"bdata\":\"AQAAAAAAPsBw27Zt27Y5wNy2bdu2bTXAS5IkSZIkMcBt27Zt27YpwEuSJEmSJCHAUZIkSZIkEcAAAAAAAAAAAFGSJEmSJBFAUZIkSZIkIUBt27Zt27YpQEuSJEmSJDFA37Zt27ZtNUBt27Zt27Y5QAEAAAAAAD5A\"},\"y\":[-8.678410596742767,-11.416853361705485,-3.1975518169460884,-7.559280362461548,-13.11627356958641,-1.0300607465765954,-1.21153017698716,-9.892356178372863,1.7261090653146727,2.824706947268516,4.61089015711048,1.2930470410790784,-9.78840973185809,-5.43765397822348,8.338098323713572],\"type\":\"scatter\"}],\"layout\":{\"template\":{\"data\":{\"barpolar\":[{\"marker\":{\"line\":{\"color\":\"white\",\"width\":0.5},\"pattern\":{\"fillmode\":\"overlay\",\"size\":10,\"solidity\":0.2}},\"type\":\"barpolar\"}],\"bar\":[{\"error_x\":{\"color\":\"#2a3f5f\"},\"error_y\":{\"color\":\"#2a3f5f\"},\"marker\":{\"line\":{\"color\":\"white\",\"width\":0.5},\"pattern\":{\"fillmode\":\"overlay\",\"size\":10,\"solidity\":0.2}},\"type\":\"bar\"}],\"carpet\":[{\"aaxis\":{\"endlinecolor\":\"#2a3f5f\",\"gridcolor\":\"#C8D4E3\",\"linecolor\":\"#C8D4E3\",\"minorgridcolor\":\"#C8D4E3\",\"startlinecolor\":\"#2a3f5f\"},\"baxis\":{\"endlinecolor\":\"#2a3f5f\",\"gridcolor\":\"#C8D4E3\",\"linecolor\":\"#C8D4E3\",\"minorgridcolor\":\"#C8D4E3\",\"startlinecolor\":\"#2a3f5f\"},\"type\":\"carpet\"}],\"choropleth\":[{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"type\":\"choropleth\"}],\"contourcarpet\":[{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"type\":\"contourcarpet\"}],\"contour\":[{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"colorscale\":[[0.0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1.0,\"#f0f921\"]],\"type\":\"contour\"}],\"heatmap\":[{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"colorscale\":[[0.0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1.0,\"#f0f921\"]],\"type\":\"heatmap\"}],\"histogram2dcontour\":[{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"colorscale\":[[0.0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1.0,\"#f0f921\"]],\"type\":\"histogram2dcontour\"}],\"histogram2d\":[{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"colorscale\":[[0.0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1.0,\"#f0f921\"]],\"type\":\"histogram2d\"}],\"histogram\":[{\"marker\":{\"pattern\":{\"fillmode\":\"overlay\",\"size\":10,\"solidity\":0.2}},\"type\":\"histogram\"}],\"mesh3d\":[{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"type\":\"mesh3d\"}],\"parcoords\":[{\"line\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"type\":\"parcoords\"}],\"pie\":[{\"automargin\":true,\"type\":\"pie\"}],\"scatter3d\":[{\"line\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"type\":\"scatter3d\"}],\"scattercarpet\":[{\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"type\":\"scattercarpet\"}],\"scattergeo\":[{\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"type\":\"scattergeo\"}],\"scattergl\":[{\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"type\":\"scattergl\"}],\"scattermapbox\":[{\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"type\":\"scattermapbox\"}],\"scattermap\":[{\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"type\":\"scattermap\"}],\"scatterpolargl\":[{\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"type\":\"scatterpolargl\"}],\"scatterpolar\":[{\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"type\":\"scatterpolar\"}],\"scatter\":[{\"fillpattern\":{\"fillmode\":\"overlay\",\"size\":10,\"solidity\":0.2},\"type\":\"scatter\"}],\"scatterternary\":[{\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"type\":\"scatterternary\"}],\"surface\":[{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"colorscale\":[[0.0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1.0,\"#f0f921\"]],\"type\":\"surface\"}],\"table\":[{\"cells\":{\"fill\":{\"color\":\"#EBF0F8\"},\"line\":{\"color\":\"white\"}},\"header\":{\"fill\":{\"color\":\"#C8D4E3\"},\"line\":{\"color\":\"white\"}},\"type\":\"table\"}]},\"layout\":{\"annotationdefaults\":{\"arrowcolor\":\"#2a3f5f\",\"arrowhead\":0,\"arrowwidth\":1},\"autotypenumbers\":\"strict\",\"coloraxis\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"colorscale\":{\"diverging\":[[0,\"#8e0152\"],[0.1,\"#c51b7d\"],[0.2,\"#de77ae\"],[0.3,\"#f1b6da\"],[0.4,\"#fde0ef\"],[0.5,\"#f7f7f7\"],[0.6,\"#e6f5d0\"],[0.7,\"#b8e186\"],[0.8,\"#7fbc41\"],[0.9,\"#4d9221\"],[1,\"#276419\"]],\"sequential\":[[0.0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1.0,\"#f0f921\"]],\"sequentialminus\":[[0.0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1.0,\"#f0f921\"]]},\"colorway\":[\"#636efa\",\"#EF553B\",\"#00cc96\",\"#ab63fa\",\"#FFA15A\",\"#19d3f3\",\"#FF6692\",\"#B6E880\",\"#FF97FF\",\"#FECB52\"],\"font\":{\"color\":\"#2a3f5f\"},\"geo\":{\"bgcolor\":\"white\",\"lakecolor\":\"white\",\"landcolor\":\"white\",\"showlakes\":true,\"showland\":true,\"subunitcolor\":\"#C8D4E3\"},\"hoverlabel\":{\"align\":\"left\"},\"hovermode\":\"closest\",\"mapbox\":{\"style\":\"light\"},\"paper_bgcolor\":\"white\",\"plot_bgcolor\":\"white\",\"polar\":{\"angularaxis\":{\"gridcolor\":\"#EBF0F8\",\"linecolor\":\"#EBF0F8\",\"ticks\":\"\"},\"bgcolor\":\"white\",\"radialaxis\":{\"gridcolor\":\"#EBF0F8\",\"linecolor\":\"#EBF0F8\",\"ticks\":\"\"}},\"scene\":{\"xaxis\":{\"backgroundcolor\":\"white\",\"gridcolor\":\"#DFE8F3\",\"gridwidth\":2,\"linecolor\":\"#EBF0F8\",\"showbackground\":true,\"ticks\":\"\",\"zerolinecolor\":\"#EBF0F8\"},\"yaxis\":{\"backgroundcolor\":\"white\",\"gridcolor\":\"#DFE8F3\",\"gridwidth\":2,\"linecolor\":\"#EBF0F8\",\"showbackground\":true,\"ticks\":\"\",\"zerolinecolor\":\"#EBF0F8\"},\"zaxis\":{\"backgroundcolor\":\"white\",\"gridcolor\":\"#DFE8F3\",\"gridwidth\":2,\"linecolor\":\"#EBF0F8\",\"showbackground\":true,\"ticks\":\"\",\"zerolinecolor\":\"#EBF0F8\"}},\"shapedefaults\":{\"line\":{\"color\":\"#2a3f5f\"}},\"ternary\":{\"aaxis\":{\"gridcolor\":\"#DFE8F3\",\"linecolor\":\"#A2B1C6\",\"ticks\":\"\"},\"baxis\":{\"gridcolor\":\"#DFE8F3\",\"linecolor\":\"#A2B1C6\",\"ticks\":\"\"},\"bgcolor\":\"white\",\"caxis\":{\"gridcolor\":\"#DFE8F3\",\"linecolor\":\"#A2B1C6\",\"ticks\":\"\"}},\"title\":{\"x\":0.05},\"xaxis\":{\"automargin\":true,\"gridcolor\":\"#EBF0F8\",\"linecolor\":\"#EBF0F8\",\"ticks\":\"\",\"title\":{\"standoff\":15},\"zerolinecolor\":\"#EBF0F8\",\"zerolinewidth\":2},\"yaxis\":{\"automargin\":true,\"gridcolor\":\"#EBF0F8\",\"linecolor\":\"#EBF0F8\",\"ticks\":\"\",\"title\":{\"standoff\":15},\"zerolinecolor\":\"#EBF0F8\",\"zerolinewidth\":2}}},\"legend\":{\"yanchor\":\"top\",\"y\":0.99,\"xanchor\":\"left\",\"x\":0.01},\"title\":{\"text\":\"Budget Sensitivity Analysis\"},\"xaxis\":{\"title\":{\"text\":\"Budget Change (%)\"}},\"yaxis\":{\"title\":{\"text\":\"Impact on Objective (%)\"}},\"hovermode\":\"x unified\",\"width\":900,\"height\":500,\"shapes\":[{\"line\":{\"color\":\"gray\",\"dash\":\"dash\"},\"type\":\"line\",\"x0\":0,\"x1\":1,\"xref\":\"x domain\",\"y0\":0,\"y1\":0,\"yref\":\"y\"},{\"line\":{\"color\":\"gray\",\"dash\":\"dash\"},\"type\":\"line\",\"x0\":0,\"x1\":0,\"xref\":\"x\",\"y0\":0,\"y1\":1,\"yref\":\"y domain\"}]}}"
+    },
+    {
+      "name": "scenarios",
+      "type": "altair",
+      "created": "2025-08-03T10:05:29.721422",
+      "metadata": {},
+      "spec": {
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "config": {
+          "axis": {
+            "gridColor": "#444",
+            "labelColor": "#fff",
+            "titleColor": "#fff"
+          },
+          "background": "#1e1e1e",
+          "legend": {
+            "labelColor": "#fff",
+            "titleColor": "#fff"
+          },
+          "title": {
+            "color": "#fff"
+          },
+          "view": {
+            "stroke": "transparent",
+            "strokeWidth": 0
+          }
+        },
+        "datasets": {
+          "data-1374e3c05e6efd0c696ff8547ab54930": [
+            {
+              "allocation": 200012.00906696083,
+              "channel": "TV",
+              "objective": 712105.8835414951,
+              "percentage": 0.19999040318741615,
+              "scenario": "Base"
+            },
+            {
+              "allocation": 300034.5755587474,
+              "channel": "Digital",
+              "objective": 712105.8835414951,
+              "percentage": 0.3000021649503594,
+              "scenario": "Base"
+            },
+            {
+              "allocation": 100016.18693796474,
+              "channel": "Radio",
+              "objective": 712105.8835414951,
+              "percentage": 0.10000538289825942,
+              "scenario": "Base"
+            },
+            {
+              "allocation": 50009.78342342106,
+              "channel": "Print",
+              "objective": 712105.8835414951,
+              "percentage": 0.0500043812210146,
+              "scenario": "Base"
+            },
+            {
+              "allocation": 250035.47959456753,
+              "channel": "Social",
+              "objective": 712105.8835414951,
+              "percentage": 0.25000847003409554,
+              "scenario": "Base"
+            },
+            {
+              "allocation": 100000.0,
+              "channel": "Outdoor",
+              "objective": 712105.8835414951,
+              "percentage": 0.09998919770885485,
+              "scenario": "Base"
+            },
+            {
+              "allocation": 200025.5126677107,
+              "channel": "TV",
+              "objective": 1186617.3682104773,
+              "percentage": 0.1999938223536708,
+              "scenario": "Conservative"
+            },
+            {
+              "allocation": 300045.8250399916,
+              "channel": "Digital",
+              "objective": 1186617.3682104773,
+              "percentage": 0.2999982883718183,
+              "scenario": "Conservative"
+            },
+            {
+              "allocation": 100024.19509994998,
+              "channel": "Radio",
+              "objective": 1186617.3682104773,
+              "percentage": 0.10000834813067078,
+              "scenario": "Conservative"
+            },
+            {
+              "allocation": 50016.953311385994,
+              "channel": "Print",
+              "objective": 1186617.3682104773,
+              "percentage": 0.050009029057441506,
+              "scenario": "Conservative"
+            },
+            {
+              "allocation": 250045.97034560126,
+              "channel": "Social",
+              "objective": 1186617.3682104773,
+              "percentage": 0.2500063552224153,
+              "scenario": "Conservative"
+            },
+            {
+              "allocation": 100000.0,
+              "channel": "Outdoor",
+              "objective": 1186617.3682104773,
+              "percentage": 0.09998415686398338,
+              "scenario": "Conservative"
+            },
+            {
+              "allocation": 200020.67390002264,
+              "channel": "TV",
+              "objective": 1946806.4678595795,
+              "percentage": 0.1999876976138437,
+              "scenario": "Aggressive"
+            },
+            {
+              "allocation": 300051.6222267561,
+              "channel": "Digital",
+              "objective": 1946806.4678595795,
+              "percentage": 0.30000215439940564,
+              "scenario": "Aggressive"
+            },
+            {
+              "allocation": 100025.34348705965,
+              "channel": "Radio",
+              "objective": 1946806.4678595795,
+              "percentage": 0.10000885286992661,
+              "scenario": "Aggressive"
+            },
+            {
+              "allocation": 50016.3606640993,
+              "channel": "Print",
+              "objective": 1946806.4678595795,
+              "percentage": 0.050008114747361145,
+              "scenario": "Aggressive"
+            },
+            {
+              "allocation": 250050.89129575604,
+              "channel": "Social",
+              "objective": 1946806.4678595795,
+              "percentage": 0.25000966680835734,
+              "scenario": "Aggressive"
+            },
+            {
+              "allocation": 100000.0,
+              "channel": "Outdoor",
+              "objective": 1946806.4678595795,
+              "percentage": 0.09998351356110546,
+              "scenario": "Aggressive"
+            }
+          ],
+          "data-3c4a814b266408903cdadea4b9a28f2a": [
+            {
+              "objective": 1946806.4678595795,
+              "scenario": "Aggressive"
+            },
+            {
+              "objective": 712105.8835414951,
+              "scenario": "Base"
+            },
+            {
+              "objective": 1186617.3682104773,
+              "scenario": "Conservative"
+            }
+          ]
+        },
+        "hconcat": [
+          {
+            "data": {
+              "name": "data-1374e3c05e6efd0c696ff8547ab54930"
+            },
+            "encoding": {
+              "color": {
+                "field": "channel",
+                "legend": null,
+                "scale": {
+                  "scheme": "tableau10"
+                },
+                "type": "nominal"
+              },
+              "tooltip": [
+                {
+                  "field": "channel",
+                  "title": "Channel",
+                  "type": "nominal"
+                },
+                {
+                  "field": "allocation",
+                  "format": "$,.0f",
+                  "title": "Allocation",
+                  "type": "quantitative"
+                },
+                {
+                  "field": "percentage",
+                  "format": ".1%",
+                  "title": "Percentage",
+                  "type": "quantitative"
+                }
+              ],
+              "x": {
+                "axis": {
+                  "format": "$,.0f"
+                },
+                "field": "allocation",
+                "title": "Allocation ($)",
+                "type": "quantitative"
+              },
+              "y": {
+                "field": "channel",
+                "sort": "-x",
+                "title": "Channel",
+                "type": "nominal"
+              }
+            },
+            "height": 300,
+            "mark": {
+              "type": "bar"
+            },
+            "name": "view_1",
+            "title": "Budget Allocation by Scenario",
+            "transform": [
+              {
+                "filter": {
+                  "param": "param_1"
+                }
+              }
+            ],
+            "width": 400
+          },
+          {
+            "data": {
+              "name": "data-3c4a814b266408903cdadea4b9a28f2a"
+            },
+            "encoding": {
+              "color": {
+                "condition": {
+                  "param": "param_1",
+                  "value": "#007AFF"
+                },
+                "value": "#E0E0E0"
+              },
+              "tooltip": [
+                {
+                  "field": "scenario",
+                  "title": "Scenario",
+                  "type": "nominal"
+                },
+                {
+                  "field": "objective",
+                  "format": ",.2f",
+                  "title": "Objective",
+                  "type": "quantitative"
+                }
+              ],
+              "x": {
+                "field": "scenario",
+                "title": "Scenario",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "objective",
+                "title": "Objective Value",
+                "type": "quantitative"
+              }
+            },
+            "height": 300,
+            "mark": {
+              "type": "bar"
+            },
+            "name": "view_2",
+            "title": "Objective Value Comparison",
+            "width": 400
+          }
+        ],
+        "params": [
+          {
+            "bind": {
+              "input": "select",
+              "name": "Select Scenario: ",
+              "options": [
+                "Base",
+                "Conservative",
+                "Aggressive"
+              ]
+            },
+            "name": "param_1",
+            "select": {
+              "fields": [
+                "scenario"
+              ],
+              "type": "point"
+            },
+            "value": [
+              {
+                "scenario": "Base"
+              }
+            ],
+            "views": [
+              "view_1",
+              "view_2"
+            ]
+          }
+        ],
+        "resolve": {
+          "scale": {
+            "color": "independent"
+          }
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "created": "2025-08-03T10:05:29.721425",
+    "count": 2
+  }
+}
